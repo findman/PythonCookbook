@@ -53,3 +53,8 @@
     print([math.sqrt(n) if n > 0 else 0 for n in mylist if n > -7])
     ```
 - `from itertools import compress`它的依据第二个参数传入的序列筛选第一个序列
+#### 从字典中提取子集
+- 字典推导式类似列表推导式
+- 字典推导式效率最优
+#### 
+
