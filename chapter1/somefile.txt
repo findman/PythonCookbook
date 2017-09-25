@@ -1,0 +1,30 @@
+Beginner's Guide to Python
+
+New to programming? Python is free and easy to learn if you know where to start! This guide will help you to get started quickly.
+
+Chinese Translation
+
+New to Python?
+
+Read BeginnersGuide/Overview for a short explanation of what Python is.
+
+Getting Python
+
+Next, install the Python interpreter on your computer. This is the program that reads Python programs and carries out their instructions; you need it before you can do any Python programming. Mac OSX distributions from 10.3 (Panther) and up include a version of Python, which may be suitable for beginning despite being as much as two years out of date. Linux distributions also frequently include Python, which is readily upgraded.
+
+There are also Python interpreter and IDE bundles available, such as Thonny. Other options can be found at IntegratedDevelopmentEnvironments.
+
+There are currently two major versions of Python available: Python 2 and Python 3. The Python2orPython3 page provides advice on how to decide which one will best suit your needs.
+
+See BeginnersGuide/Download for instructions to download the correct version of Python.
+
+At some stage, you'll want to edit and save your program code. Take a look at HowToEditPythonCode for some advice and recommendations.
+
+Learning Python
+
+Next, read a tutorial and try some simple experiments with your new Python interpreter.
+
+If you have never programmed before, see BeginnersGuide/NonProgrammers for a list of suitable tutorials.
+If you have previous programming experience, consult BeginnersGuide/Programmers, which lists more advanced tutorials.
+If English isn't your first language, you might be more comfortable with a tutorial that's been translated into your language. Consult python.org's list of Non-English resources.
+Most tutorials assume that you know how to run a program on your computer. If you are using Windows and need help with this, see How do I Run a Program Under Windows. There are also sites that offer in-browser coding for those who want to learn Python: see Codecademy for general python and DataCamp or Dataquest for Python for data science.
