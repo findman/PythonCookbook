@@ -29,3 +29,7 @@
 #### 找出序列中出现次数最多的元素
 - `collections.Counter`可以统计任意可hash对象的出现频率
 - `collections.Counter`可进行加减操作，来计算频率
+#### 通过公共键对字典列表排序
+- `operator.itemgetter`函数可以根据key获取值并返回排序依据值
+- 它的效率高于匿名函数
+- 它的参数是所有可以传给`__getitem__()`的值
