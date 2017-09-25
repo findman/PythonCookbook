@@ -27,3 +27,5 @@
 - 使用`slice`实例使切片命名，让程序可读性更良好
 - 使用`indices(size)`，让切片参数不溢出
 #### 找出序列中出现次数最多的元素
+- `collections.Counter`可以统计任意可hash对象的出现频率
+- `collections.Counter`可进行加减操作，来计算频率
