@@ -43,6 +43,13 @@
 - `re`默认支持Unicode
 - 建议先标准化并清理所有文本
 - 忽略大小写
+- Unicode中重音符号有两种表示方法，用一个字节表示，或者用基字母加上重音符号表示，在Unicode中他们是相等的，但是在Python中由于通过code point来比较大小，所以就不相等了。
+>解决方法是通过unicodedata库中的normalize函数，该函数的第一个参数可以接受"NFC",'NFD','NFKC','NFKD'四个参数中的一个。
+>NFC(Normalization Form Canonical Composition)：以标准等价方式来分解，然后以标准等价重组之。若是singleton的话，重组结果有可能和分解前不同。尽可能的缩短>整个字符串的长度，所以会把'e\u0301'2个字节压缩到一个字节'é'。
+>NFD(Normalization Form Canonical Decomposition)：以标准等价方式来分解
+>NFKD(Normalization Form Compatibility Decomposition)：以相容等价方式来分解
+>NFKC(Normalization Form Compatibility Composition)：以相容等价方式来分解，然后以标准等价重组之。
+>NFKC和NFKD可能会引起数据损失。
 
 #### 2.11 删除字符串中不需要的字符
 - `strip`去两边空格，也可输入多个字符，并在两端除去
@@ -50,3 +57,6 @@
 -  注意`strip`仅移除左右两侧的空格和回车
 -  移除中间空格可用`replace`
 -  更复杂的用正则
+
+#### 2.12 审查清理文本字符串
+- `translate(remap)`有点类似字符替换
