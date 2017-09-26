@@ -11,6 +11,12 @@ import unicodedata
 
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') #改变标准输出的默认编码  
 
+# 简单的replace效率更高
+def clean_spaces(s):
+    s = s.replace('\r', '')
+    s = s.replace('\t', ' ')
+    s = s.replace('\f', ' ')
+    return s
 
 def translate_fun():
     s = 'pýtĥöñ\fis\tawesome\r\n'
@@ -46,6 +52,6 @@ def translate_fun():
     b = unicodedata.normalize('NFD', s)
     print(b.encode('ascii', 'ignore').decode('ascii'))
     print(b.encode('utf-8', 'ignore').decode('utf-8'))
-    
+
 if __name__ == '__main__':
     translate_fun()
