@@ -35,6 +35,11 @@
 - `re.DOTALL`标志可以让点匹配所有字符包含换行符
 - 不使用这个标志则需要使用或匹配把换行符放进去
 
-#### 将 Unicode 文本标准化
+#### 2.9 将 Unicode 文本标准化
 - `unicodedata.normalize` 标准化unicode
 - `unicodedata.combining`判断是否为和音字符
+
+#### 2.10 在正则式中使用 Unicode
+- `re`默认支持Unicode
+- 建议先标准化并清理所有文本
+- 忽略大小写

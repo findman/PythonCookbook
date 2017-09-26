@@ -5,14 +5,19 @@
 Topic:将 Unicode 文本标准化
 Desc:
 """
+import io  
+import sys 
 import unicodedata
+
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') #改变标准输出的默认编码  
 
 def normal_unicode():
     s1 = 'Spicy Jalape\u00f1o'
     s2 = 'Spicy Jalapen\u0303o'
 
-    #print(s1)
-    #print(s2)
+    print(s1)
+    print(s2)
 
     t1 = unicodedata.normalize('NFC', s1)
     t2 = unicodedata.normalize('NFC', s2)
@@ -27,7 +32,7 @@ def normal_unicode():
     print(ascii(t3))
 
     s = '\ufb01'
-    #print(s)
+    print(s)
     s1 = unicodedata.normalize('NFD', s)
     s2 = unicodedata.normalize('NFKD', s)
     s3 = unicodedata.normalize('NFKC', s)
@@ -35,7 +40,7 @@ def normal_unicode():
     print(ascii(s2))
     print(ascii(s3))
 
-    #print(''.join(c for c in t1 if not unicodedata.combining(c)))
+    print(''.join(c for c in t1 if not unicodedata.combining(c)))
 
 
 if __name__ == '__main__':
