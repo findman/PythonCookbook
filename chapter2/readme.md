@@ -80,3 +80,8 @@
 - `textwrap.fill` 控制指定宽度
 - `initial_indent` 开始字符串
 - `subsequent_indent`第二行开始的字符串
+
+#### 2.17 在字符串中处理 html 和 xml
+- `html.escape(s)`转换特殊字符
+- 非ASCII嵌入`s.encode('ascii', errors='xmlcharrefreplace')`
+- `HTMLParser()`类型`p.unescape(s)` 转码
