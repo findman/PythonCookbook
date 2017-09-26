@@ -75,3 +75,8 @@
 - `__missing__`处理key缺失的情况
 - 函数使用 sys.getframe(1) 返回调用者的栈帧
 - 可以从中访问属性f_locals 来获得局部变量
+
+#### 2.16 以指定列宽格式化字符串
+- `textwrap.fill` 控制指定宽度
+- `initial_indent` 开始字符串
+- `subsequent_indent`第二行开始的字符串

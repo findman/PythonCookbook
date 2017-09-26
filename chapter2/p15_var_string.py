@@ -2,8 +2,8 @@
 # -*- coding:utf8 -*-
 
 """
-Topic:字符串合并
-Desc:字符串中的变量
+Topic:字符串中的变量
+Desc:
 """
 import sys
 import string
@@ -52,6 +52,6 @@ def var_string():
     # print('%(name) has %(n) messages.' % vars())
     s = string.Template('$name has $n messages.')
     print(s.substitute(vars()))
-    
+
 if __name__ == '__main__':
     var_string()
