@@ -85,3 +85,9 @@
 - `html.escape(s)`转换特殊字符
 - 非ASCII嵌入`s.encode('ascii', errors='xmlcharrefreplace')`
 - `HTMLParser()`类型`p.unescape(s)` 转码
+
+#### 2.18 字符串令牌解析
+- Python专有的正则模式命令组。(?P<name>...) 成组之后，name为组。[参考](https://wizardforcel.gitbooks.io/py-re-guide/content/14.html)
+- 正则预编译后有`scanner`函数，它每次逐一扫描出字符串中的匹配项
+- `iter`函数创建一个可以一次迭代一个元素的对象.函数原型`iter(object[, sentinel])`.[参考](https://www.programiz.com/python-programming/methods/built-in/iter)
+- 实现字符串令牌化，需要实现生成器函数，迭代执行scanner函数，将匹配结果逐一输出
