@@ -91,3 +91,11 @@
 - 正则预编译后有`scanner`函数，它每次逐一扫描出字符串中的匹配项
 - `iter`函数创建一个可以一次迭代一个元素的对象.函数原型`iter(object[, sentinel])`.[参考](https://www.programiz.com/python-programming/methods/built-in/iter)
 - 实现字符串令牌化，需要实现生成器函数，迭代执行scanner函数，将匹配结果逐一输出
+
+
+#### 2.19 实现一个简单的递归下降分析器
+- 暂时看不太明白。以后在研究
+
+
+#### 2.20 字节字符串上的字符串操作
+- 基本和字符串处理相同
